@@ -1,0 +1,23 @@
+### Starting a new repo from the command line:
+
+1. FIRST - Create a new repo on github
+>To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub. 
+2. cd to directory with new-to-be repo
+3. git init
+4. create .gitignore
+5. git add .
+6. git commit -m "first commit"
+7. get https url from new empty repo on github (on mac's https saves git credentials on keychain)
+8. git remote add origin https-url
+9. git remote -v to verify
+10. git push origin master
+11. say hello to uncle bob
+12. don't forget to add a readme.md
+
+### Use git repo to hold work-related projects/exercises and notes
+
+* keep @work and @home separate, as branches?
+* work repo organization
+  * top level - notes
+  * per topic/project folders
+  * OR @home as a folder or as a branch

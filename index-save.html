@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+		<title></title>
+        <style src=""></style>
+  </head>
+  <body>
+		<script type=text/javascript>
+         // wrap in anonymous -- had to name in global/window scope -- nothing new
+         // try firebug -- firebug seems borked
+         // try cs
+         // poo = (function(){
+		 //    function baz() {
+		 //    	console.log("baz");
+		 //    	bar();
+		 //    }
+		 //    function bar() {
+		 //    	console.log("bar");
+		 //    	foo();
+		 //    }
+		 //    function foo() {
+		 //    	console.log("foo");
+		 //    }
+		 //   baz();
+         //           })();
+         // ff couldnt break in baz.js, but chrome could, no changes
+		</script>
+        <script src="node_modules/debug/debug.js"></script>
+		<!-- <script src="boo.js"></script> -->
+        <script>
+         var a = debug('stuff');
+         a('doing a stuff');
+         console.log('a is doing stuff');
+        </script>  
+  </body>
+</html>

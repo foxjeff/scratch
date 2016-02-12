@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>Container</title>
+  </header>  
+  <body>
+    <h3>Container</h3>
+    <input type="text" ng-model="value" ng-model-onblur>
+    {{value}} -- {{blerg}}
+
+    <script>
+      function Container (param) {
+        function dec() {
+          if (secret > 0) {
+            secret -= 1;
+            return true;
+          } else {
+            return false;
+          }
+        }
+     this.member = param;
+     var secret = 3;
+     var that = this;
+
+     this.service = function() {
+       return dec() ? that : null;
+     };
+     }
+     
+    </script>
+
+
+<script>
+
+// override the default input to update on blur
+angular.module('app', []).directive('ngModelOnblur', function() {
+    return {
+        restrict: 'A',
+        require: 'ngModel',
+        link: function(scope, elm, attr, ngModelCtrl) {
+            if (attr.type === 'radio' || attr.type === 'checkbox') return;
+
+            elm.unbind('input').unbind('keydown').unbind('change');
+            
+            elm.bind("keydown keypress", function(event) {
+                if (event.which === 13) { //or 9 for tab
+                    scope.$apply(function() {
+                       scope.blerg = "hello"; ngModelCtrl.$setViewValue(elm.val());
+                    });
+                }
+            });
+
+            elm.bind('blur', function() {
+                scope.$apply(function() {
+                    ngModelCtrl.$setViewValue(elm.val());
+                });
+            });
+        }
+    };
+});
+</script>
+  </body>
+</html>
+
+// this is from a browser console
+// it shows that under Container, there is a service function and then a prototype then a constructor
+// and then <function scope> which has a closure
+// it is this closure which has the private members of the Container class
+// c.f. crockford
+// short answer: Container->service function->function scope->closure over Container
+
+// c =new Container(13)
+// Container {member: 13, service: function}
+// member: 13
+// service: function () {
+// arguments: null
+// caller: null
+// length: 0
+// name: ""
+// prototype: Object
+// constructor: function () {
+// arguments: null
+// caller: null
+// length: 0
+// name: ""
+// prototype: Object
+// __proto__: function Empty() {}
+// <function scope>
+// Closure
+// dec: function dec() {
+// secret: 1
+// that: Container
+// Global: Window
+// __proto__: Object
+// __proto__: function Empty() {}
+// <function scope>
+// __proto__: Container-Fluid

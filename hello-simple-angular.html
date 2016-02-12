@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular.min.js"></script>
+    <style>
+     .erpa {color:red;}
+    </style>
+  </head>
+
+  <!-- 
+       following this: http://tutorials.jenkov.com/angularjs/views-and-directives.html
+       has good info on ng-repeat and decontructing objects in the direcdtive
+  -->
+
+  <body ng-app="myApp">
+    <div ng-controller="HelloController">
+      <h2> {{ helloTo.title }}! </h2>
+
+      <span ng-hide="myData.showIt"> {{ myData.textf() }} </span>
+      <hr>
+      <span ng-show="myData.showIt" ng-bind = "myData.textf()">  </span>
+          
+      <div ng-switch on="myData.switch">
+        <div ng-switch-when="1">Shown when switch is 1</div>
+        <div ng-switch-when="2">Shown when switch is 2</div>
+        <div ng-switch-default>Shown when switch is anything else than 1 and 2</div>
+      </div>
+      <hr>
+      <ul>
+        <li ng-repeat="item in myData.items | orderBy:myData.sortField:myData.reverse | limitTo:3" ng-click="myData.doClick2(item, $event)">
+          {{item.text}} : {{$first}}, {{$middle}}, {{$last}}  
+        </li>
+      </ul>
+      <hr>
+      <button ng-click="myData.doClick3(item, $event)">Send AJAX Request</button>
+      <br/>
+      Data from server: {{myData.fromServer}}
+      <hr>
+      <ol> 
+        <!-- how to sort this:? -> change data structure to: [{ key: "erpa", value: "value-1"},...]
+             then orderBy:'data.key'
+        -->
+        <li ng-repeat="(name, value) in myData.myObject | orderBy:myData.sortField2:myData.reverse">
+          {{name}} = {{value}} 
+        </li>
+      </ol>
+      <hr>
+      <form>
+        <select multiple="true" ng-model="myForm.car"
+                ng-options="obj.id as obj.name for obj in myForm.options">
+        </select>
+      </form>
+
+      <div>
+        <div ng-click="myData.doClick($event)">Click here</div>
+        {{myForm.car}}
+      </div>
+    </div>
+
+    <h3>Controller: {{ katang.foo }}</h3>
+    <input type="text" ng-model="katang.foo" />
+    <br />
+    <hr>
+    <my-dir></my-dir>
+
+		<script src="hello-simple-angular.js"></script>
+		<script src="bundle.js"></script>
+  </body>
+
+</html>    
