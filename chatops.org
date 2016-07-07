@@ -14,7 +14,7 @@ In this spectrum of communication modes, ChatOps takes IM to a new level by prov
 8. integration with LDAP
 9. ChatOps provides a common collaboration tool -- between teams with remote workers and with remote clients
 10. video conferencing
-
+11. [[https://hubot.github.com][Hubot]]
 ** HipChat
    [[https://www.hipchat.com/customers][HipChat Cusomers]]
 **** Plugins
