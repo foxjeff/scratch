@@ -21,7 +21,7 @@ In this spectrum of communication modes, ChatOps takes IM to a new level by prov
 - [[https://marketplace.atlassian.com/plugins/2c61c34b-b0d7-4c71/server/overview][Sketchboard.io]] +server
 - [[https://marketplace.atlassian.com/plugins/com.jira.hipchat/overview][Jira]]
 - [[https://marketplace.atlassian.com/plugins/com.jenkins.hipchat/overview][Jenkins]]
-- Confluence
+- [[https://marketplace.atlassian.com/plugins/com.confluence.hipchat/overview][Confluence]]
 - [[https://marketplace.atlassian.com/plugins/puppet/cloud/overview][Puppet]] 
 - Outlook
 - [[https://marketplace.atlassian.com/plugins/hc-standup/cloud/overview?_ga=1.255579983.631192746.1465567038][Standup]] - Standup add-on is the friend of remote, agile teams everywhere. +server
