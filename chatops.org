@@ -16,7 +16,7 @@ In this spectrum of communication modes, ChatOps takes IM to a new level by prov
 10. video conferencing
 11. [[https://hubot.github.com][Hubot]]
 12. Common communication issues...
-13. 
+
 ** HipChat
    [[https://www.hipchat.com/customers][HipChat Cusomers]]
 **** Plugins
@@ -34,3 +34,5 @@ In this spectrum of communication modes, ChatOps takes IM to a new level by prov
    [[https://slack.com/customers][Slack Customers]]
 **** Plugins
 - And more, weather, uber, giphy
+
+* https://github.com/foxjeff/scratch/blob/master/chatops.org
