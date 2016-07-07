@@ -17,7 +17,7 @@ In this spectrum of communication modes, chatops takes IM to a new level by prov
 
 ** HipChat
    [[https://www.hipchat.com/customers][HipChat Cusomers]]
-*** Plugins
+**** Plugins
 - [[https://marketplace.atlassian.com/plugins/2c61c34b-b0d7-4c71/server/overview][Sketchboard.io]] +server
 - Jira
 - Jenkins
@@ -31,5 +31,5 @@ In this spectrum of communication modes, chatops takes IM to a new level by prov
 - And more, weather, uber, giphy
 ** Slack
    [[https://slack.com/customers][Slack Customers]]
-*** Plugins
+**** Plugins
 - And more, weather, uber, giphy
