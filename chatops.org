@@ -30,5 +30,6 @@ In this spectrum of communication modes, chatops takes IM to a new level by prov
 - HipGuru - integration wtih Confluence Questions. +server
 - And more, weather, uber, giphy
 ** Slack
+   [[https://slack.com/cusomters][Slack Customers]]
 *** Plugins
 - And more, weather, uber, giphy
