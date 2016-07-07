@@ -19,7 +19,7 @@ In this spectrum of communication modes, ChatOps takes IM to a new level by prov
    [[https://www.hipchat.com/customers][HipChat Cusomers]]
 **** Plugins
 - [[https://marketplace.atlassian.com/plugins/2c61c34b-b0d7-4c71/server/overview][Sketchboard.io]] +server
-- Jira
+- [[https://marketplace.atlassian.com/plugins/com.jira.hipchat/overview][Jira]]
 - Jenkins
 - Confluence
 - [[https://marketplace.atlassian.com/plugins/puppet/cloud/overview][Puppet]] 
