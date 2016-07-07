@@ -23,7 +23,6 @@ In this spectrum of communication modes, ChatOps takes IM to a new level by prov
 - [[https://marketplace.atlassian.com/plugins/com.jenkins.hipchat/overview][Jenkins]]
 - [[https://marketplace.atlassian.com/plugins/com.confluence.hipchat/overview][Confluence]]
 - [[https://marketplace.atlassian.com/plugins/puppet/cloud/overview][Puppet]] 
-- Outlook
 - [[https://marketplace.atlassian.com/plugins/hc-standup/cloud/overview?_ga=1.255579983.631192746.1465567038][Standup]] - Standup add-on is the friend of remote, agile teams everywhere. +server
 - [[https://marketplace.atlassian.com/plugins/bluejeans-hipchat-service/cloud/overview?_ga=1.16560753.631192746.1465567038][BlueJeans]], There's no need to leave Hipchat to launch a video meeting. Simply click on "Meet Now on BlueJeans" and join with full moderator controls. +server
 - Alias - mention groups of people at once. +server
