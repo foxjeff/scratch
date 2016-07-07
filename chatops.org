@@ -1,7 +1,7 @@
 * ChatOps Demo                                                 :chatops:demo:
-** What is chatops?
+** What is ChatOps?
 Different modes of communication for different purposes; face-to-face; voice (telephone, voice chat); IM (person-to-person) e.g. sametime/lync/skype for business/SMS/iMessage; video chat, e.g. facetime, google hangouts;
-In this spectrum of communication modes, chatops takes IM to a new level by providing:
+In this spectrum of communication modes, ChatOps takes IM to a new level by providing:
 1. Rooms/Channels for groups of people to message each other
 2. ChatOps is primarily a team-based solution, not an enterprise-wide solution
 3. Chat messages are encryped end-to-end and chat logs are stored encryped
