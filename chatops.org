@@ -35,4 +35,4 @@ In this spectrum of communication modes, ChatOps takes IM to a new level by prov
 **** Plugins
 - And more, weather, uber, giphy
 
-* https://github.com/foxjeff/scratch/blob/master/chatops.org
+** https://github.com/foxjeff/scratch/blob/master/chatops.org
